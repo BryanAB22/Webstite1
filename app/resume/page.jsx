@@ -5,8 +5,14 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
+  // FaFigma,
   FaNodeJs,
+  FaPython,
+  FaCpp,
+  FaBrain,
+  FaDatabase, 
+  FaProjectDiagram
+
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -15,40 +21,21 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "Welcome! My name is Bryan Barrios, and I'm majoring in Computer Science & Mathematics. This semester will be my last for my bachelor's degree and the start of my M.S. in Mathematics.",
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luke Coleman",
+      fieldValue: "Bryan Barrios",
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "12+ Years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "luke.01",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "American",
+      fieldValue: "(+1) 903 424 4212",
     },
     {
       fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
+      fieldValue: "babarrios89@outlook.com",
     },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Spanish",
-    },
+    
   ],
 };
 
@@ -56,39 +43,39 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+  //description:
+ //  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
+      company: "University of Texas at Tyler",
+      position: "Statistics/Calculus -Teacher Assistant",
+      duration: "August 2023 - Current",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "University of Texas at Tyler",
+      position: "Calculus 1 & 2 - SIL",
+      duration: "August 2023 - Current",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
+      company: "TLT -Tomorrow's Leader Today, Inc",
+      position: "Project Manager",
+      duration: "Summer 2023",
     },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
-    },
+    // {
+    //   company: "Tech Academy",
+    //   position: "Teaching Assistant",
+    //   duration: "2019 - 2020",
+    // },
+    // {
+    //   company: "Digital Agency",
+    //   position: "UI/UX Designer",
+    //   duration: "2018 - 2019",
+    // },
+    // {
+    //   company: "Software Development Firm",
+    //   position: "Junior Developer",
+    //   duration: "2017 - 2018",
+    // },
   ],
 };
 
@@ -96,48 +83,65 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+  //description:
+  //  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "University of Texas at Tyler",
+      degree: "M.S. in Cybersecurity and Data Analytics",
+      duration: "January 2025 - May 2026",
     },
     {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "University of Texas at Tyler",
+      degree: "M.S. in Mathmatics",
+      duration: "August 2024 - May 2026",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      institution: "University of Texas at Tyler",
+      degree: "B.S. in Computer Science (Minor-Math)",
+      duration: "August 2023 - December 2024",
     },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
-    },
+    // {
+    //   institution: "Tech Institute",
+    //   degree: "Certified Web Developer",
+    //   duration: "2019",
+    // },
+    // {
+    //   institution: "Design School",
+    //   degree: "Diploma in Graphic Design",
+    //   duration: "2016 - 2018",
+    // },
+    // {
+    //   institution: "Community College",
+    //   degree: "Associate Degree in Computer Science",
+    //   duration: "2014 - 2016",
+    // },
   ],
 };
 
 // skills data
 const skills = {
   title: "My skills",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+  // description:
+  //  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore."
   skillList: [
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <FaBrain />,
+      name: "Machine Learning",
+    },
+    {
+      icon: <FaProjectDiagram />,
+      name: "Neural Network",
+    },
+    {
+      icon: <FaDatabase  />,
+      name: "SQL",
+    },
+
     {
       icon: <FaHtml5 />,
       name: "html 5",
@@ -166,10 +170,7 @@ const skills = {
       icon: <FaNodeJs />,
       name: "node.js",
     },
-    {
-      icon: <FaFigma />,
-      name: "figma",
-    },
+    
   ],
 };
 

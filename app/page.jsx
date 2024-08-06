@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
+
 // components
+import React from 'react';
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
+/* eslint-disable react/no-unescaped-entities */
 const Home = () => {
   return (
     <section className="h-full">
@@ -13,24 +16,29 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">CS & Math @ Univeristy of Texas at Tyler</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br /> <span className="text-accent">Luke Coleman</span>
+              Hello I'm <br /> <span className="text-accent">Bryan Barrios</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+              I'm a student who geeks about math and machine learning
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
+              <a
+                href="CoverLetter.pdf"
+                download
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+                <Button
+                variant="outline"
+                size="lg">
+                {/* className="uppercase flex items-center gap-2" */}
+              
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+                </a>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
