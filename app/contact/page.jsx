@@ -1,4 +1,5 @@
 "use client";
+import Social from '@/components/social';
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
